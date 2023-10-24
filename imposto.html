@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/imposto.css">
+    <title>RDCfinances</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div id="div-cabecalho">
+            <img src="./img/logo_branca.svg" alt="logo do site branca" id="logo">
+            <h1><b>RDC</b>finances</h1>
+        
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html" class="link-cabecalho">INICÍO</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="link-cabecalho">CALCULADORAS</a>
+                        <div class="dropdown-menu">
+                            <a href="./composto.html">Juros compostos</a>
+                            <a href="./simples.html">Juros Simples</a>
+                            <a href="./imposto.html">Imposto de renda</a>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./financas.html" class="link-cabecalho">MINHAS FINANÇAS</a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="./img/mclogo.svg" alt="lodo da escola Maria celia pinheiro falcão">
+        </div>
+    </header>
+
+    <section class="calculo">
+        <form action="./js/main.js" method="get" autocomplete="on" class="from">
+            <h2>Simulador de imosto de renda</h2>
+            <div class="conteiner-radio">
+                <p>Anual ou Mensal</p>
+                
+                <input name="opcoes" type="radio" />
+            
+                <input  name="opcoes" type="radio" />
+                 
+            </div>
+
+            <h2>Redimentos</h2>
+            <div class="conteiner">
+                <div class="item">
+                    <p class="calculo-par ">Salário</p>
+                    <input type="number" class="input-calc din">
+                </div>
+                <div class="item">
+                    <p class="calculo-par">Outros rendimentos</p>
+                    <input type="number" class="input-calc">
+                </div>
+            </div>
+
+            <h2>Deduções</h2>
+            <div class="conteiner">
+                <div class="item">
+                    <p class="calculo-par">Dependentes</p>
+                    <input type="number" class="input-calc">
+                </div>
+                <div class="item">
+                    <p class="calculo-par">Gastos com saúde</p>
+                    <input type="number" class="input-calc">
+                </div>
+            </div>
+
+            <div class="conteiner">
+                <div class="item">
+                    <p class="calculo-par">Pensão Alimenticia</p>
+                    <input type="number" class="input-calc">
+                </div>
+                <div class="item">
+                    <p class="calculo-par">Gastos com Estudos</p>
+                    <input type="number" class="input-calc">
+                </div>
+                <div class="item">
+                    <p class="calculo-par">Carnê Leão</p>
+                    <input type="number" class="input-calc">
+                </div>
+            </div>
+
+            <div class="bnt-conteiner">
+                <input type="reset" value="Limpar" class="bnt bnt-lim">
+                <input type="submit" value="Calcular" class="bnt  bnt-cal">
+                
+            </div>
+        </form>
+    </section>
+
+    <section class="explicacao">
+        <h2 class="explicacao-titulo">O que é IRRF sobre o salário?</h2>
+
+        <p class="explicacao-par explicacaoPar">O que é IRRF? O IRRF (Imposto de Renda Retido na Fonte) é 
+            uma obrigação tributária destinada à Receita Federal que
+             pode ser cobrada tanto de Pessoas Físicas (PF) quanto de 
+             Pessoas Jurídicas (PJ). Na prática, ele funciona como uma 
+             antecipação do Imposto 
+            de Renda, com o objetivo de simplificar a declaração anual.</p>
+
+        <h2 class="explicacao-titulo">O que é e como funciona imposto de renda?</h2>
+
+        <p class="explicacao-par explicacaoPar">O Imposto de Renda é uma parte fundamental do sistema 
+            tributário em muitos países, incluindo o Brasil. 
+            Trata-se de um tributo que incide sobre a renda das pessoas 
+            físicas e jurídicas, desempenhando um papel vital na 
+            arrecadação de recursos para financiar serviços públicos e 
+            programas governamentais. Neste contexto, é crucial 
+            compreender como o Imposto de Renda funciona, desde a 
+            declaração de renda até o cálculo das alíquotas, para 
+            que possamos cumprir nossas obrigações fiscais e contribuir 
+            para o funcionamento do Estado. Este texto explorará os 
+            aspectos-chave do 
+            Imposto de Renda e seu impacto em nossa vida financeira.</p>
+    </section>

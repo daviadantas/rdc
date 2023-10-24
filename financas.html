@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/financas.css">
+    <title>RDCfinances</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div id="div-cabecalho">
+            <img src="./img/logo_branca.svg" alt="logo do site branca" id="logo">
+            <h1><b>RDC</b>finances</h1>
+        
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html" class="link-cabecalho">INICÍO</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="link-cabecalho">CALCULADORAS</a>
+                        <div class="dropdown-menu">
+                            <a href="./composto.html">Juros compostos</a>
+                            <a href="./simples.html">Juros Simples</a>
+                            <a href="./imposto.html">Imposto de renda</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./financas.html" class="link-cabecalho">MINHAS FINANÇAS</a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="./img/mclogo.svg" alt="lodo da escola Maria celia pinheiro falcão">
+        </div>
+    </header>
+
+    <section class="calculo">
+        <h2>Calculadora de gastos</h2>
+
+        <form action="./js/main.js" method="get" autocomplete="on" class="from">
+            <div>
+                <div class="item">
+                    <p class="calculo-par ">Salário líquido</p>
+                    <input type="number" class="input-calc maior">
+                </div>
+            </div>
+            <div class="conteiner">
+                <div class="item">
+                    <p class="calculo-par">Moradia</p>
+                    <input type="number" class="input-calc">
+                </div>
+                <div class="item">
+                    <p class="calculo-par">Alimentação</p>
+                    <input type="number" class="input-calc">
+                </div>
+                <div class="item">
+                    <p class="calculo-par">Transporte</p>
+                    <input type="number" class="input-calc">
+                </div>
+                <div class="item">
+                    <p class="calculo-par">Internet e Telefone</p>
+                    <input type="number" class="input-calc">
+                </div>
+                <div class="item">
+                    <p class="calculo-par">Divididas</p>
+                    <input type="number" class="input-calc">
+                </div>
+            </div>
+            <div class="conteiner">
+                <div class="item-2">
+                    <p class="calculo-par">Água, luz e Gás</p>
+                    <input type="number" class="input-calc">
+                </div>
+                <div class="item-2">
+                    <p class="calculo-par">Saúde</p>
+                    <input type="number" class="input-calc">
+                </div>
+                <div class="item-2">
+                    <p class="calculo-par">Educação</p>
+                    <input type="number" class="input-calc">
+                </div>
+                <div class="item-2">
+                    <p class="calculo-par">Entreterimento</p>
+                    <input type="number" class="input-calc">
+                </div>
+                <div class="item-2">
+                    <p class="calculo-par">Investimentos e Poupança</p>
+                    <input type="number" class="input-calc">
+                </div>
+            </div>
+            <div class="bnt-conteiner">
+                <input type="reset" value="Limpar" class="bnt bnt-lim">
+                <input type="submit" value="Calcular" class="bnt  bnt-cal">
+            </div>
+        </form>
+    </section>
+    
+    <section class="explicacao">
+        <h2 class="explicacao-titulo">Como posso gerenciar meus gastos de forma certa?</h2>
+
+        <p class="explicacao-par explicacaoPar" >Gerenciar os gastos de forma eficaz é essencial para alcançar estabilidade financeira e atingir metas financeiras. Isso requer um planejamento cuidadoso, acompanhamento regular das despesas e priorização de gastos de acordo com as necessidades e objetivos pessoais. Neste contexto, estratégias como o orçamento, controle de despesas e alocação de recursos se tornam cruciais para manter as finanças em ordem.</p>
+
+        <h2 class="explicacao-titulo">Gerenciando seus Gastos de Forma Inteligente</h2>
+
+        <p class="explicacao-par explicacaoPar">Gerenciar seus gastos é essencial para manter o equilíbrio financeiro e alcançar suas metas financeiras. Aqui estão algumas dicas simples para ajudar:</p>
+        <p class="explicacao-par explicacaoPar"></p>Orçamento Mensal: Comece criando um orçamento mensal. Liste todas as suas fontes de renda e despesas. Isso lhe dará uma visão clara de para onde vai o seu dinheiro.</p>
+        <p class="explicacao-par explicacaoPar">Priorize Necessidades: Classifique suas despesas em necessidades essenciais (alimentação, moradia, transporte) e desejos (entretenimento, compras supérfluas). Certifique-se de priorizar as necessidades.</p>
+        <p class="explicacao-par explicacaoPar">Estabeleça Metas: Defina metas financeiras realistas. Isso pode incluir economizar para emergências, pagar dívidas ou investir em objetivos de longo prazo.</p>
+        <p class="explicacao-par explicacaoPar">Controle seus Gastos: Registre todos os gastos, por menores que sejam. Use aplicativos de gerenciamento financeiro para acompanhar suas despesas diariamente.</p>
+        <p class="explicacao-par explicacaoPar">Evite Dívidas Desnecessárias: Limite o uso de cartões de crédito e evite empréstimos que não sejam estritamente necessários. Dívidas de juros elevados podem prejudicar suas finanças.</p>
+        <p class="explicacao-par explicacaoPar">Economize Regularmente: Reserve uma parte de sua renda para a poupança ou investimentos assim que receber. Trate isso como uma despesa obrigatória.</p>
+        <p class="explicacao-par explicacaoPar">Pesquise Preços: Antes de fazer grandes compras, pesquise e compare preços. Às vezes, simplesmente ser um consumidor informado pode economizar muito dinheiro.</p>
+        <p class="explicacao-par explicacaoPar">Evite Compras Impulsivas: Pense duas vezes antes de comprar algo não planejado. Espere um tempo para decidir se é realmente necessário.</p>
+        <p class="explicacao-par explicacaoPar">Reavalie Regularmente: Periodicamente, reveja seu orçamento e ajuste-o conforme necessário. Suas prioridades podem mudar ao longo do tempo.</p>
+        <p class="explicacao-par explicacaoPar"></p>Consulte um Profissional: Se você tiver dificuldades para controlar seus gastos ou quiser orientação financeira mais detalhada, considere consultar um consultor financeiro.</p>
+    </section>
+</body>
+</html>
+ 

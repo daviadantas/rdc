@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/simples.css">
+    <title>RDCfinances</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div id="div-cabecalho">
+            <img src="./img/logo_branca.svg" alt="logo do site branca" id="logo">
+            <h1><b>RDC</b>finances</h1>
+        
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html" class="link-cabecalho">INICÍO</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="link-cabecalho">CALCULADORAS</a>
+                        <div class="dropdown-menu">
+                            <a href="./composto.html">Juros compostos</a>
+                            <a href="./simples.html">Juros Simples</a>
+                            <a href="./imposto.html">Imposto de renda</a>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./financas.html" class="link-cabecalho">MINHAS FINANÇAS</a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="./img/mclogo.svg" alt="lodo da escola Maria celia pinheiro falcão">
+        </div>
+    </header>
+
+    <section class="calcular">
+        <h2>Calculadora de juros simples</h2>
+
+        <form action="./js/main.js" method="get" autocomplete="on" class="from">
+
+            <div class="conteiner">
+                <p>Valor inicial</p>
+                <input type="number" class="input-calc din">
+
+                <div>
+                    <p>Taxa de juros</p>
+                    <input type="number" class="input-calc por">
+                
+                    <label for="iest"></label>
+                    <select name="taxa-de-juros" id="iest">
+                        <option value="men">Mensal</option>
+                        <option value="anu">Anual</option>
+                    </select>
+                </div>
+            </div>
+            <div class="conteiner">
+
+
+                <div>
+                    <p>Período em</p>
+                    <input type="number" class="input-calc">
+                
+                    <label for="iest"></label>
+                    <select name="taxa-de-juros" id="iest">
+                        <option value="men">Meses</option>
+                        <option value="anu">Anos</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="bnt-conteiner">
+                <input type="reset" value="Limpar" class="bnt bnt-lim">
+                <input type="submit" value="Calcular" class="bnt  bnt-cal">
+                
+            </div>
+    
+        </form>
+
+    </section>
+
+    <section class="explicacao">
+        
+        <div>
+            <h2 class="explicacao-titulo">Explicação do calculo</h2>
+                <p class="explicacao-par explicacaoPar">
+                    Os juros simples são um conceito fundamental no mundo das finanças e 
+                    estão presentes em várias transações financeiras do dia a dia. Eles representam 
+                    a remuneração que alguém recebe pelo empréstimo
+                    de dinheiro ou o custo de se tomar dinheiro emprestado por um período determinado.
+                </p>
+        
+                <p class="explicacao-par explicacaoPar">
+                    A fórmula do juro simples é J = C ∙ i ∙ t, em que J é o juro,
+                    C é o capital, i é a taxa de juro e t é o tempo. Para calcular
+                    o juro simples, basta substituir os valores na fórmula e realizar o cálculo.
+                </p>
+        </div>
+
+    </section>

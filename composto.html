@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/composto.css">
+    <title>RDCfinances</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div id="div-cabecalho">
+            <img src="./img/logo_branca.svg" alt="logo do site branca" id="logo">
+            <h1><b>RDC</b>finances</h1>
+        
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html" class="link-cabecalho">INICÍO</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="link-cabecalho">CALCULADORAS</a>
+                        <div class="dropdown-menu">
+                            <a href="./composto.html">Juros compostos</a>
+                            <a href="./simples.html">Juros Simples</a>
+                            <a href="./imposto.html">Imposto de renda</a>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./financas.html" class="link-cabecalho">MINHAS FINANÇAS</a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="./img/mclogo.svg" alt="lodo da escola Maria celia pinheiro falcão">
+        </div>
+    </header>
+
+    <section class="calcular">
+        <h2>Calculadora de Juros compostos</h2>
+        <form action="./js/main.js" method="get" autocomplete="on" class="from">
+
+            <div class="conteiner">
+                
+                <p>Valor inicial</p>
+                <input type="number" class="input-calc din">
+
+                <div>
+                    <p>Taxa de juros</p>
+                    <input type="number" class="input-calc por">
+                
+                    <label for="iest"></label>
+                    <select name="taxa-de-juros" id="iest">
+                        <option value="men">Mensal</option>
+                        <option value="anu">Anual</option>
+                    </select>
+                </div>
+            </div>
+            <div class="conteiner">
+
+                <p>Valor mensal</p>
+                <input type="number" class="input-calc din">
+
+                <div>
+                    <p>Período em</p>
+                    <input type="number" class="input-calc">
+                
+                    <label for="iest"></label>
+                    <select name="taxa-de-juros" id="iest">
+                        <option value="men">Meses</option>
+                        <option value="anu">Anos</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="bnt-conteiner">
+                <input type="reset" value="Limpar" class="bnt bnt-lim">
+                <input type="submit" value="Calcular" class="bnt  bnt-cal">
+                
+            </div>
+    
+        </form>
+
+    </section>
+
+    <section class="explicacao">
+        
+        <div>
+            <h2 class="explicacao-titulo">Quer saber como o calculo é feito ?</h2>
+                <p class="explicacao-par explicacaoPar">
+                    Os juros compostos crescem de
+                    forma exponencial pois sua base 
+                    de cálculo é sempre em cima do 
+                    montante anterior. Faça esse 
+                    cálculo financeiro de forma simples
+                    utilizando nossa calculadora!
+                </p>
+        
+                <p class="explicacao-par explicacaoPar">
+                    A forma que calculamos o juros composto é M = C ( 1+i)t ou seja, a fórmula é montante é igual ao 
+                    capital, vezes a taxa de juros mais um, elevado ao tempo.
+                </p>
+        </div>
+
+    </section>

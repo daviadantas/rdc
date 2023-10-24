@@ -1,0 +1,27 @@
+#inicio, .inicio{
+    display: flex;
+    align-items: center;
+    padding: 64px 246px;
+    background:  var(--cor-de-fundo);   
+
+}
+
+.inicio{
+    background-color: var(--cor-branco);
+}
+
+.linha-horizontal {
+    width: 30%; 
+    height: 5px; 
+    background-color: #000; 
+    margin: 10px 0; 
+}
+
+
+
+
+
+
+
+
+
