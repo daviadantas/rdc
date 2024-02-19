@@ -116,6 +116,7 @@ li {
 }
 
 .explicacao-par{
+    display: none;
     text-align: left;
     margin: 25px;
 }
